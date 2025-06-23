@@ -1,0 +1,18 @@
+npx expo start -c --dev-client
+
+eas build -p android --profile development --local  
+
+eas build -p android --profile preview --local 
+
+
+
+eas build --profile development-simulator --platform ios --local 
+
+eas build --platform ios --profile preview-ios --local
+
+eas build --platform ios --profile production --local
+
+eas submit --platform ios
+
+
+firebase deploy --only functions
