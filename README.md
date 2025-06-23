@@ -38,16 +38,37 @@ Duration
 
 Tap a walk to view the route drawn on the map
 
+⚙️ Getting Started
+1. Clone the repository
+bash
+Copy
+Edit
+git clone https://github.com/khushichhatwani/sploot-walk-tracker.git
+cd sploot-walk-tracker
+2. Install dependencies
+npm install
+# or
+yarn install
+3. Set up your Google Maps API key
+Create a .env file in the root of the project:
+GOOGLE_MAPS_API_KEY=your_actual_google_maps_api_key
+
+🔐 Note: The key is not pushed to GitHub and is stored securely in the .env file.
+
+4. Run the app (Expo)
+npx expo start
+Scan the QR code with Expo Go or run it on an emulator.
+
 🧠 Architecture Decisions
-Used Expo for faster build/deploy.
+Used Expo for fast setup and cross-platform ease.
 
-Used minimal state (React hooks only) to keep app lightweight.
+State managed using React hooks (useState, useEffect, useRef) to keep the app lightweight.
 
-Avoided Redux or heavy state libraries for simplicity.
+No Redux or external state libraries — simple and sufficient for the project scope.
 
 🔐 Security Note
-Google Maps API key is now secured using .env and not pushed to GitHub.
+Google Maps API key is now secured using .env and excluded from Git history.
 
-Original leaked key was rotated.
+The original leaked key has been revoked and rotated.
 
-Built with ❤️ by Khushi Chhatwani
+🙋🏻‍♀️ Built with ❤️ by Khushi Chhatwani
